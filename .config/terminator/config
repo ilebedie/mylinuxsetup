@@ -2,6 +2,10 @@
   borderless = True
   suppress_multiple_term_dialog = True
 [keybindings]
+  go_down = <Primary><Super>j
+  go_left = <Primary><Super>h
+  go_right = <Primary><Super>l
+  go_up = <Primary><Super>k
 [layouts]
   [[default]]
     [[[child1]]]

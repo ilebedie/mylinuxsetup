@@ -2,7 +2,6 @@ set number
 set ruler
 set nowrap
 set hlsearch
-" colorscheme mayansmoke
 
 
 set nocompatible              " be iMproved, required
@@ -61,6 +60,7 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
 " search word selected in visual mode
 vnoremap // y/<C-R>"<CR>
 
@@ -98,13 +98,5 @@ let g:CommandTWildIgnore=&wildignore
 
 let NERDTreeIgnore=['\.pyc']
 
-" Removes the menubar in gvim
-set guioptions -=m
-
-
-" Removes the toolbar in gvim
-set guioptions -=T
-autocmd FileType yml setlocal shiftwidth=2 tabstop=2 
-autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 
-
-
+autocmd FileType yml setlocal shiftwidth=2 " tabstop=2
+autocmd FileType yaml setlocal shiftwidth=2 " tabstop=2
